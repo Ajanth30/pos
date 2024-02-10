@@ -25,7 +25,7 @@ public class UserTransfomer implements BaseTransformer<User, UserDto> {
 		if (user != null) {
 			userDto = new UserDto();
 			userDto.setId(user.getId());
-			userDto.setUserName(user.getUserName());
+			userDto.setName(user.getName());
 			userDto.setPassword(user.getPassword());
 			userDto.setAddress(user.getAddress());
 			userDto.setEmailAdress(user.getEmailAdress());
@@ -44,7 +44,7 @@ public class UserTransfomer implements BaseTransformer<User, UserDto> {
 		if (userDto != null) {
 			user = new User();
 			user.setId(userDto.getId());
-			user.setUserName(userDto.getUserName());
+			user.setName(userDto.getName());
 			user.setPassword(userDto.getPassword());
 			user.setAddress(userDto.getAddress());
 			user.setEmailAdress(userDto.getEmailAdress());

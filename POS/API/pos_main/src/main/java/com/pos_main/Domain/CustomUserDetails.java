@@ -27,7 +27,7 @@ public class CustomUserDetails  implements UserDetails {
         auths.add(new SimpleGrantedAuthority("ROLE_"+userType.getUserType().toUpperCase()));
 
         return new CustomUserDetails(
-                user.getUserName(),
+                user.getEmailAdress(),
                 user.getPassword(),
                 auths);
     }

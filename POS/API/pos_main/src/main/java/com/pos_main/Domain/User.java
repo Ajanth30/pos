@@ -33,7 +33,7 @@ public class User implements Serializable{
 	@Column(name = "id")
 	private Integer id;
 	@Column(name = "userName",nullable = false)
-	private String userName;
+	private String name;
 	@Column(name = "password",nullable = false)
 	private String password;
 	@Column(name = "address")

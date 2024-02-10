@@ -47,7 +47,7 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao{
 	public User loadByUsername(String username) {
 
 		Criteria criteria = getCurrentSession().createCriteria(User.class, "user")
-				.add(Restrictions.eq("user.userName", username));
+				.add(Restrictions.eq("user.emailAdress", username));
 		User user=(User)criteria.uniqueResult();
 		return (User) criteria.uniqueResult();
 
